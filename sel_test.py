@@ -1,10 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.common.by import By
+import os
+
 
 # Specify the path to your GeckoDriver executable
 # If geckodriver is in your system's PATH, you might not need this line
-geckodriver_path = '/opt/homebrew/bin/geckodriver' # Replace with the actual path
+geckodriver_path = os.environ["gecko_path"]
 
 # Create a Service object for GeckoDriver
 service = Service(geckodriver_path)
