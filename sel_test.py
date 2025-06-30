@@ -2,6 +2,9 @@ from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.common.by import By
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 # Specify the path to your GeckoDriver executable
